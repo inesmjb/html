@@ -3,28 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil - Odyssée</title>
+    <title>Page Unique</title>
     <link rel="stylesheet" href="assets/style.css"> <!-- Lien vers le fichier CSS -->
 </head>
 <body>
 
+<!-- Menu de navigation -->
 <nav>
-    <a href="index.html">Accueil</a>
-    <a href="experiences.html">Expériences</a>
-    <a href="contacter-nous.html">Contactez-nous</a>
+    <a href="#accueil">Accueil</a>
+    <a href="#experiences">Nos Expériences</a>
+    <a href="#contact">Contactez-nous</a>
 </nav>
 
-<header>
-    <h1>Bienvenue sur Odyssée</h1>
-    <p>Explorez le monde avec nous !</p>
-</header>
+<!-- Section Accueil -->
+<section id="accueil">
+    <header>
+        <h1>Bienvenue sur notre site</h1>
+        <p>Explorez le monde à travers nos yeux.</p>
+    </header>
+</section>
 
-<section>
-    <h2>Nos dernières aventures</h2>
-    <p>Découvrez nos vidéos et nos voyages récents.</p>
+<!-- Section Expériences -->
+<section id="experiences">
+    <h2>Nos Expériences</h2>
+    <p>Découvrez nos voyages passionnants et nos aventures uniques à travers le monde.</p>
+    <div class="video-container">
+        <h3>Vlog Voyage à Istanbul</h3>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/4w2AKqiGI4A" frameborder="0" allowfullscreen></iframe>
+    </div>
+</section>
+
+<!-- Section Contact -->
+<section id="contact">
+    <h2>Contactez-nous</h2>
+    <p>Vous avez des questions ? N'hésitez pas à nous contacter !</p>
+    <form action="#" method="POST">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        
+        <button type="submit">Envoyer</button>
+    </form>
 </section>
 
 </body>
 </html>
-
 
